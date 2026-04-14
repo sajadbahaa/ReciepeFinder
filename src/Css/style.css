@@ -1,0 +1,133 @@
+/* start global */
+*
+{
+-webkit-box-sizing:border-box;
+-moz-box-sizing:border-box;
+box-sizing: border-box;
+padding: 0;
+margin:0;
+}
+@media (min-width:768px) 
+{
+.container
+{
+    width:750px ;
+}
+} 
+
+/* medium */
+@media (min-width:991px) 
+{
+.container
+{
+    width:970px ;
+}
+}
+
+/* large */
+
+@media (min-width:1200px) 
+{
+ .container
+{
+    width:1170px ;
+}   
+}
+
+:root
+{
+--original-color:rgb(240, 105, 15);
+--line-height:1.4;
+}
+body
+{
+ font-family: "Segoe UI", sans-serif;   
+}
+
+/* end global */
+
+.flex
+{
+display: flex;
+}
+
+    .container
+{
+margin-left:  auto;
+margin-right: auto;
+padding-left:  15px;
+padding-right: 15px;
+/* background-color: rgb(194, 207, 207); */
+flex-direction: column;
+align-items: center;
+gap:10px;
+}
+/* header */
+header
+{
+text-align: center;
+}
+header .title-header
+{
+font-size: 30px;
+color: var(--original-color);
+font-weight: 700;
+margin-bottom: 10px;
+padding:5px 0px;
+line-height: var(--line-height);
+}
+
+/* لازم font-size + font-family يكونون موجودين (إجباري) */
+header .label
+{
+display: inline-block;
+margin-bottom: 10px;
+color: #A39E9E;
+font: normal 400 20px "Segoe UI", sans-serif;
+}
+
+/* end header */
+
+/* search */
+.search
+{
+    display: flex;
+    max-width: 500px;
+    gap: 10px;
+    margin: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.search .input
+{
+flex: 1;
+min-width: 200px;
+border:none;
+padding:0 10px;
+outline: none;
+}
+
+.btn-search
+{
+    flex:0 0 auto;
+ padding: 0px 15px;
+    border: none;
+    background-color: #ff6b6b;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-search:hover {
+    background-color: #e55a5a;
+}
+
+
+.search .input,
+.btn-search {
+    height: 40px;
+}
+/* end search */
