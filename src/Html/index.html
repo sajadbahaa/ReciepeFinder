@@ -11,22 +11,30 @@
       <link rel="stylesheet" href="/src/Css/style.css">
 <!-- font awosome -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<!-- file js -->
+<script type="module" src="/src/Js/app.js" defer ></script>
+
 </head>
 <body>
 <!-- icon Recipe  fa-solid fa-utensils  -->
  <!--start header  -->
-<div class="container flex">
+<div id="page" class="container flex">
 <header>
 <h1 class="title-header"><i class="fa-solid fa-utensils"></i> Recipe Finder</h1>
 <span class="label">Find delicious recipes from around the world</span>
 </header>
-
-      <section class="search">
-      <input id="inputId" class="input" type="text" placeholder="Search for meals or keywords..." minlength="3">
-      <button class="btn-search">Search</button>
-      </section>
-</div>
 <!-- end header -->
+
+<!--start search  -->
+      <section id="search" class="search">
+      <input id="inputId" class="input" type="text" placeholder="Search for recipes ..." minlength="3">
+      <button id="btn-search" class="btn-search">Search</button>
+      </section>
+      <!-- end search -->
+
+      <!-- result -->
+<div id="result" class="result inline-flex">Search result for "???" :</div>
+      </div>
 
 
 
